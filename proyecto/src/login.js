@@ -1,7 +1,8 @@
 // src/login.js
 import { supabase } from './supabase.js';
 import { mostrarRegistro } from './register.js'; // para poder ir al
-registro
+
+console.log("✅ login.js cargado correctamente");
 
 export function mostrarLogin() {
 const app = document.getElementById('app');
@@ -57,5 +58,7 @@ return;
 
 const usuario = data.user;
 console.log('Usuario logueado:', usuario);
+
+location.reload()
 });
 }
